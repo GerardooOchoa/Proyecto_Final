@@ -19,7 +19,7 @@ Cualquier persona o estudiante que desee llevar un control simple de sus gastos 
    ```bash
    pip install -r requirements.txt
 
-   
+
 
                      ┌─────────────────────────┐
                      │  Iniciar Programa      │
@@ -65,3 +65,31 @@ monto → Guardar en lista  de gastos           monto presupuesto
                                │
                                ▼
                      Opción “8” → Salir
+
+1. gastos.xlsx
+
+Archivo automático generado por el programa.
+
+Guarda todos los gastos registrados por el usuario: día, categoría y monto.
+
+Se actualiza cada vez que eliges Guardar datos en Excel en el menú.
+
+
+2. presupuestos.xlsx
+
+Archivo automático generado por el programa.
+
+Guarda los presupuestos establecidos por categoría.
+
+Se actualiza cuando estableces o modificas un presupuesto y luego guardas.
+
+
+3. reporte_gastos.xlsx
+
+Archivo automático generado por el programa.
+
+Contiene el análisis comparando gastos vs presupuestos.
+
+Se genera cada vez que eliges Analizar gastos y generar reporte en el menú.
+
+Se sobrescribe si generas un nuevo reporte con datos actualizados.
