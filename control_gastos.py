@@ -2,7 +2,7 @@
 ------------------------------------------------------------
 SISTEMA DE CONTROL DE GASTOS PERSONALES
 Autores Gerardo Ochoa y Diego Fernandez
-Versión: 1.0
+Versión: 1.00
 ------------------------------------------------------------
 Descripción:
 Este programa permite a una persona registrar y analizar sus gastos
