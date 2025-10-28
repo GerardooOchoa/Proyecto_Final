@@ -1,7 +1,7 @@
 """
 ------------------------------------------------------------
 SISTEMA DE CONTROL DE GASTOS PERSONALES
-Autor: (Tu nombre)
+Autores Gerardo Ochoa y Diego Fernandez
 Versión: 1.0
 ------------------------------------------------------------
 Descripción:
