@@ -19,3 +19,49 @@ Cualquier persona o estudiante que desee llevar un control simple de sus gastos 
    ```bash
    pip install -r requirements.txt
 
+   
+
+                     ┌─────────────────────────┐
+                     │  Iniciar Programa      │
+                     └───────────┬───────────┘
+                                 │
+                                 ▼
+                   ┌───────────────────────────┐
+                   │   Mostrar Menú Principal   │
+                   │ 1. Registrar gasto        │
+                   │ 2. Ver gastos             │
+                   │ 3. Eliminar gasto         │
+                   │ 4. Guardar en Excel       │
+                   │ 5. Cargar desde Excel     │
+                   │ 6. Establecer presupuestos│
+                   │ 7. Analizar gastos        │
+                   │ 8. Salir                  │
+                   └───────────┬──────────────┘
+                               │
+                               ▼
+                ┌─────────────────────────────┐
+                │ Usuario elige una opción    │
+                └───────────┬─────────────────┘
+                            │
+     ┌──────────────────────┼────────────────────────┐
+     ▼                      ▼                        ▼
+Registrar gasto         Ver gastos           Establecer presupuestos
+     │                      │                        │
+     ▼                      ▼                        ▼
+Pedir día, categoría,     Mostrar lista       Pedir categoría y
+monto → Guardar en lista  de gastos           monto presupuesto
+     │                      │                        │
+     └───────────────┬──────┴─────────────┐
+                     ▼                      ▼
+           Guardar datos en Excel      Analizar gastos
+           (gastos.xlsx,             Comparar gastos vs
+            presupuestos.xlsx)        presupuestos
+                     │                      │
+                     ▼                      ▼
+                   Fin de acción ───────────┘
+                               │
+                               ▼
+                     Volver a mostrar menú
+                               │
+                               ▼
+                     Opción “8” → Salir
