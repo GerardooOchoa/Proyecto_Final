@@ -1,7 +1,8 @@
 
 # Sistema de Control de Gastos
 
-Autores: Gerardo Ochoa y Diego Fernandez
+Autores: Gerardo Ochoa y Diego Fernandez 
+Programado en Codespaces
 
 Este programa permite registrar, consultar, analizar y exportar los gastos personales de un usuario.
 Fue creado con Python como proyecto para practicar estructuras de control (for, while, if), manejo de diccionarios, listas y lectura/escritura de archivos Excel (.xlsx).

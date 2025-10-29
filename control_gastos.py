@@ -12,6 +12,8 @@ import matplotlib.pyplot as plt
 import requests
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
+import openpyxl
+
 
 # ------------------- FUNCIONES DE VALIDACIÓN -------------------
 
@@ -204,6 +206,37 @@ def generar_reporte_pdf(gastos, presupuestos):
 
     c.save()
     print("📄 Reporte PDF generado: 'reporte_gastos.pdf'")
+
+
+def graficar_gastos(gastos, presupuestos):
+    """Genera una gráfica de barras de gastos vs presupuesto por categoría."""
+    if not gastos:
+        print("No hay gastos para graficar.")
+        return
+
+    # Sumar gastos por categoría
+    resumen = {}
+    for g in gastos:
+        cat = g["Categoría"]
+        resumen[cat] = resumen.get(cat, 0) + g["Monto"]
+
+    categorias = list(resumen.keys())
+    gastos_totales = [resumen[cat] for cat in categorias]
+    presupuestos_totales = [presupuestos.get(cat, 0) for cat in categorias]
+
+    x = range(len(categorias))
+    plt.figure(figsize=(8,5))
+    plt.bar(x, gastos_totales, width=0.4, label="Gastos", color='skyblue')
+    plt.bar([i+0.4 for i in x], presupuestos_totales, width=0.4, label="Presupuesto", color='lightgreen')
+    plt.xticks([i+0.2 for i in x], categorias, rotation=45)
+    plt.ylabel("Monto ($)")
+    plt.title("Gastos vs Presupuesto por Categoría")
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig("grafica_gastos.png")  # Guarda la gráfica
+    plt.show()
+    print("📊 Gráfica generada y guardada como 'grafica_gastos.png'.")
+
 
 
 

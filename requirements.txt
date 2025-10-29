@@ -3,3 +3,4 @@ tabulate
 matplotlib
 requests
 reportlab
+openpyxl
